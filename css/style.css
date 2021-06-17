@@ -1,0 +1,219 @@
+.container {
+  padding: 0 15px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Playfair Display;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.btn {
+  font-family: Montserrat;
+  background-color: #998431;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.welcome {
+  background-image: url(/img/bgc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0 0 0;
+  height: 840px;
+}
+
+.header {
+  margin-bottom: 580px;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.header__menu {
+  display: flex;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.header__item {
+  width: 277px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.header__item:last-child {
+  border: none;
+}
+
+.header__link {
+  display: block;
+  padding: 13px 0;
+  color: #fff;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #99862A;
+  transition: 0.2s ease-in;
+}
+
+.welcome__buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.welcome__btn {
+  padding: 15px 30px;
+}
+
+.description {
+  padding: 100px 0;
+  background-color: #282828;
+}
+
+.description__wrapper {
+  padding: 60px 187px;
+  border: 3px solid #C4C4C4;
+  text-align: center;
+}
+
+.description__title {
+  text-align: center;
+  color: #fff;
+}
+
+.description__decoration-line {
+  width: 160px;
+  height: 1px;
+  margin: 40px auto;
+  background-color: #fff;
+}
+
+.description__text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.collection {
+  padding: 80px 0;
+  background-color: #E6E3C4;
+}
+
+.collection__decoration-line {
+  max-width: 1110px;
+  height: 1px;
+  background-color: #998431;
+  margin: 0 auto;
+}
+
+.collection__wrapper {
+  display: flex;
+  padding: 60px 0;
+}
+
+.collection__upper-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+
+.collection__title {
+  max-width: 300px;
+  margin: 30px 0;
+}
+
+.collection__title-bottom-line {
+  width: 160px;
+  height: 1px;
+  background-color: #282828;
+  margin-bottom: 30px;
+}
+
+.collection__text {
+  max-width: 445px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #282828;
+}
+
+.collection-wines {
+  max-width: 445px;
+  margin-bottom: 30px;
+}
+
+.collection-wines__section {
+  display: flex;
+  border-bottom: 1px solid #282828;
+}
+.collection-wines__section:last-child {
+  border: none;
+}
+
+.collection-wines__year {
+  display: inline-block;
+  padding: 25px;
+  border-right: 1px solid #282828;
+}
+
+.collection-wines__info {
+  padding-left: 30px;
+}
+
+.collection-wines__name {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #282828;
+}
+
+.collection-wines__description {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #282828;
+}
+
+.collection__btn {
+  padding: 15px 30px;
+}
+
+.collection__right-block {
+  margin-left: 125px;
+}
+
+.collection__img-1 {
+  max-width: 540px;
+  height: 500px;
+}
+
+.collection__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}

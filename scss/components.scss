@@ -1,0 +1,25 @@
+.container {
+    padding: 0 15px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.title {
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+.btn {
+    font-family: Montserrat;
+    background-color: #998431;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,58 @@
+.welcome {
+    background-image: url(/img/bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 0 0;
+    height: 840px;
+}
+
+.header {
+    margin-bottom: 580px;
+}
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #fff;
+}
+.header__address {
+}
+.header__phone {
+}
+.header__menu {
+    display: flex;
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.header__item{
+    width: 277px;
+    text-align: center;
+    border-right: 1px solid #fff;
+
+    &:last-child{
+        border: none;
+    }
+}
+.header__link{
+    display: block;
+    padding: 13px 0;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover{
+        color: #99862A;
+        transition: 0.2s ease-in;
+    }
+}
+.welcome__buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.welcome__btn{
+    padding: 15px 30px;
+}
