@@ -26,6 +26,16 @@
   border: none;
 }
 
+@media (max-width: 992px) {
+  .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+}
 .welcome {
   background-image: url(/img/bgc.jpg);
   background-repeat: no-repeat;
@@ -66,7 +76,7 @@
 
 .header__link {
   display: block;
-  padding: 13px 0;
+  padding: 15px 0;
   color: #fff;
   text-decoration: none;
 }
@@ -77,14 +87,53 @@
 
 .welcome__buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 30px;
+  row-gap: 20px;
 }
 
 .welcome__btn {
   padding: 15px 30px;
 }
 
+@media (max-width: 576px) {
+  .welcome {
+    padding: 30px 0 0 0;
+    height: 500px;
+  }
+
+  .header {
+    margin-bottom: 75px;
+  }
+
+  .header__contacts {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    row-gap: 20px;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .header__item {
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+  .header__item:last-child {
+    border: none;
+  }
+
+  .welcome__btn {
+    width: 200px;
+    padding: 10px 20px;
+  }
+}
 .description {
   padding: 100px 0;
   background-color: #282828;
@@ -116,6 +165,24 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 992px) {
+  .description {
+    padding: 50px 0;
+  }
+
+  .description__wrapper {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 576px) {
+  .description {
+    padding: 25px 0;
+  }
+
+  .description__wrapper {
+    padding: 25px 25px;
+  }
+}
 .collection {
   padding: 80px 0;
   background-color: #E6E3C4;
@@ -218,6 +285,31 @@
   margin-top: 30px;
 }
 
+@media (max-width: 1200px) {
+  .collection__text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .collection__right-block {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .collection {
+    padding: 40px 0;
+  }
+
+  .collection__wrapper {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  .collection__btn {
+    display: flex;
+    margin: 0 auto;
+  }
+}
 .testing {
   background-color: #282828;
   padding: 130px 0 100px 0;
@@ -226,7 +318,8 @@
 .testing__wrapper {
   position: relative;
   border: 3px solid #c4c4c4;
-  max-width: 1110px;
+  max-width: 1080px;
+  padding: 0 15px;
   margin: 0 auto;
   padding-bottom: 100px;
 }
@@ -323,6 +416,63 @@
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 1200px) {
+  .testing__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  .testing__wrapper::before {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  .testing__wrapper::after {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .testing {
+    background-color: #282828;
+    padding: 60px 0 50px 0;
+  }
+
+  .testing__wrapper {
+    padding-bottom: 50px;
+  }
+
+  .testing__form {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .testing__title {
+    top: -50px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .testing__text {
+    margin-bottom: 40px;
+  }
+
+  .testing__input {
+    width: auto;
+  }
+
+  .testing__input--address {
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .testing__title {
+    top: -35px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
 .footer {
   padding: 50px 0;
   background-color: #998431;
@@ -332,7 +482,7 @@
   display: flex;
   justify-content: center;
   column-gap: 60px;
-  padding: 20px 60px;
+  padding: 20px 0px;
   border-top: 1px solid #fff;
 }
 
@@ -378,4 +528,56 @@
   flex-wrap: wrap;
   column-gap: 40px;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .footer__menu {
+    column-gap: 40px;
+  }
+
+  .footer__section {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 992px) {
+  .footer__menu {
+    column-gap: 20px;
+  }
+
+  .footer__section {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__menu {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .footer__menu li {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .footer__section {
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
 }

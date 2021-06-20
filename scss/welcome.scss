@@ -5,7 +5,6 @@
     padding: 30px 0 0 0;
     height: 840px;
 }
-
 .header {
     margin-bottom: 580px;
 }
@@ -17,10 +16,6 @@
     font-size: 13px;
     line-height: 150%;
     color: #fff;
-}
-.header__address {
-}
-.header__phone {
 }
 .header__menu {
     display: flex;
@@ -39,7 +34,7 @@
 }
 .header__link{
     display: block;
-    padding: 13px 0;
+    padding: 15px 0;
     color: #fff;
     text-decoration: none;
 
@@ -50,9 +45,44 @@
 }
 .welcome__buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 30px;
+    row-gap: 20px;
 }
 .welcome__btn{
     padding: 15px 30px;
+}
+@media (max-width: 576px) {
+    .welcome {
+        padding: 30px 0 0 0;
+        height: 500px;
+    }
+    .header {
+        margin-bottom: 75px;
+    }
+    .header__contacts {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        row-gap: 20px;
+    }
+    .header__menu {
+        flex-direction: column;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .header__item{
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    
+        &:last-child{
+            border: none;
+        }
+    }
+    .welcome__btn{
+        width: 200px;
+        padding: 10px 20px;
+    }
 }

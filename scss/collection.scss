@@ -84,3 +84,26 @@
     justify-content: space-between;
     margin-top: 30px;
 }
+@media (max-width: 1200px) {
+    .collection__text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .collection__right-block {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .collection {
+        padding: 40px 0;
+    }
+    .collection__wrapper {
+        padding: 30px 0;
+    }
+}
+@media (max-width: 576px) {
+    .collection__btn {
+        display: flex;
+        margin: 0 auto;
+    }
+}
